@@ -300,6 +300,13 @@ select {
     border-radius: 5px;
 }
 
+.productosTitulo {
+    background-color: rgba(193, 146, 105, 0.755);
+    height: 90px;
+    
+    
+}
+
 
 
 @media only screen and (max-width:1180px){
