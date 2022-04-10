@@ -1,0 +1,646 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Peta', sans-serif;
+}
+
+body {
+    background: rgb(235, 211, 182);
+    
+    
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: "imgEncabezado "
+                          "menuSticky "
+                          "tituloCentral" 
+                          "seccionUno"
+                          "seccionDos"
+                          "pieDePag"  ;
+     
+                      
+}
+
+
+.imgEncabezado {
+    background-image: url(../images/img-header-lana.jpg);
+    background-size: cover;
+    padding-bottom: 200px;
+    background-position: center;
+    grid-area: imgEncabezado;
+}
+
+.menuSticky {
+    position: sticky;
+    top: 0%;
+    grid-area: menuSticky;
+}
+
+.menuNav {
+    background-color: rgb(182, 147, 101);
+    grid-area: menuNav ;
+    
+}
+
+.seccionUno {
+    grid-area: seccionUno;
+}
+
+.seccionDos {
+    grid-area: seccionDos;
+}
+
+.pieDePag {
+    grid-area: pieDePag;
+}
+
+.menuLista {
+    text-align: right;
+}
+
+.menuListaItem {
+    display: inline-block;
+    margin: 30px;
+    font-size: 1.3em;
+       
+}
+
+ul li a:hover {
+    color: #ccad59;
+
+}
+
+.itemBoton {
+    text-decoration: none;
+    color: rgb(133, 79, 34);
+}
+
+.iconMenu {
+    margin: 3px;
+
+}
+
+.tituloCentral {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 2.5em;
+    color: rgb(98, 85, 85);
+    
+}
+
+
+.subTituloCentral {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.5em;
+    font-style: italic;   
+}
+
+
+
+.contenedorImgCentral {
+    text-align: center;
+    margin-top: 40px;
+    
+    
+}
+
+.imgCentro {
+    display: inline-block;
+    padding: 20px;
+    
+     
+}
+
+.lanaUno , .lanaTres {
+    width: 400px;
+    border-radius: 30%;
+    border-style: dotted solid;
+    border-color: rgba(206, 123, 28, 0.911);
+    padding: 4px;
+}
+
+.lanaDos {
+    width: 400px;
+    height: 268px;
+    border-radius: 30%;
+    border-style: dotted solid;
+    border-color: rgba(206, 123, 28, 0.911);
+    padding: 4px;
+}
+
+
+.oficioTitulo {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 80px;
+}
+
+.videoTuto {
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 15px;
+
+}
+
+.whatsappBotonContenedor {
+    display: inline-block;
+    position: fixed;
+    right: 4%;
+    bottom: 5%;
+    font-size: 4em;
+    
+}
+
+.fa-whatsapp {
+    color: green;
+}
+
+.contenedorBotonArriba {
+    text-align: center;
+    margin: 50px;
+}
+
+.arribaBoton {
+    text-align: center;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.derechosRes {
+    text-align: center;
+    margin-top: 20px;
+    font-size: .8em;
+}
+
+.autorWeb {
+    text-align: center;
+    margin-top: 5px;
+    font-size: .7em;
+}
+
+.navLinksPie {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.linksPie {
+    display: inline-block;
+    margin: 20px;
+    
+}
+
+.linksPie a {
+    text-decoration: none;
+}
+
+hr {
+    opacity: 40% ;
+}
+
+
+.contenedorMap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.direccion {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: -50px;
+}
+
+.textoNosotros {
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+          
+        
+}
+
+form {
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    
+}
+
+fieldset {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border: none;
+}
+
+fieldset div .labelPosition {
+    display: block;
+}
+
+
+label, input, select, textarea {
+    margin: 5px;
+    
+}
+
+textarea , input {
+    background-color: rgb(224, 196, 170);
+    border: none;
+}
+
+select {
+    border: none;
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgb(224, 196, 170);
+    
+}
+
+.inputContact {
+    height: 30px;
+    width: 600px;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;   
+}
+
+.inputContact:focus{
+    background-color: rgba(179, 136, 108, 0.753);
+   
+}
+
+.inputContact::selection{
+    background: #af8162;
+    color: #f6c848;
+}
+
+.textAreaContenedor {
+    margin-left: -10px;
+}
+
+.textArea {
+    resize: none;
+    overflow: auto;
+    width: 600px;
+    height: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+} 
+
+.sumbitContact {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+
+@media only screen and (max-width:1180px){
+    .gridContainer {
+        display: grid;
+        grid-template-areas: "imgEncabezado "
+                              "menuSticky "
+                              "tituloCentral" 
+                              "seccionUno"
+                              "seccionDos"
+                              "pieDePag"  ;
+        height: 100vh;
+                            
+    }
+
+    .imgEncabezado {
+        background-image: url(../images/img-header-lana.jpg);
+        background-size: cover;
+        padding-bottom: 200px;
+        background-position: center;
+        grid-area: imgEncabezado;
+    }
+    
+    .menuSticky {
+        position: sticky;
+        top: 0%;
+        grid-area: menuSticky;
+         
+    }
+
+    .menuNav {
+        background-color: rgb(182, 147, 101);
+        grid-area: menuNav ;
+        
+                       
+    }
+    
+    .seccionUno {
+        grid-area: seccionUno;
+    }
+    
+    .seccionDos {
+        grid-area: seccionDos;
+    }
+    
+    .pieDePag {
+        grid-area: pieDePag;
+    }
+
+    
+    ul li span {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .iconMenu {
+        font-size: 1.8em;
+        color: rgb(133, 79, 34);
+        transition: .5s;    
+    }
+
+    .iconMenu:hover {
+        color: #ccad59;
+        transform: scale(1.3);
+    }
+    
+    
+    .menuLista {
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (max-width:700px){
+    .gridContainer {
+        display: grid;
+        grid-template-areas: "imgEncabezado "
+                              "menuSticky "
+                              "tituloCentral" 
+                              "seccionUno"
+                              "seccionDos"
+                              "pieDePag"  ;
+        height: 100vh;
+                            
+    }
+
+    
+    .imgEncabezado {
+        background-image: url(../images/img-header-lana.jpg);
+        background-size: cover;
+        padding-bottom: 200px;
+        background-position: center;
+        grid-area: imgEncabezado;
+    }
+    
+    .menuSticky {
+        position: sticky;
+        top: 0%;
+        grid-area: menuSticky;
+         
+    }
+
+    .menuNav {
+        background-color: rgb(182, 147, 101);
+        grid-area: menuNav ;
+        
+                       
+    }
+    
+    .seccionUno {
+        grid-area: seccionUno;
+    }
+    
+    .seccionDos {
+        grid-area: seccionDos;
+    }
+    
+    .pieDePag {
+        grid-area: pieDePag;
+    }
+
+    
+    ul li span {
+        display: none;
+    }
+
+    .iconMenu {
+        font-size: 1.8em;
+        color: rgb(133, 79, 34);
+    
+    }
+
+    .iconMenu:hover {
+        color: #ccad59;
+    }
+    
+    .menuLista {
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (max-width:375px){
+    .gridContainer {
+        display: grid;
+        grid-template-areas: "imgEncabezado "
+                              "menuSticky "
+                              "tituloCentral" 
+                              "seccionUno"
+                              "seccionDos"
+                              "pieDePag"  ;
+        height: 100vh;
+                            
+    }
+
+    
+    .imgEncabezado {
+        background-image: url(../images/img-header-lana.jpg);
+        background-size: cover;
+        padding-bottom: 200px;
+        background-position: center;
+        grid-area: imgEncabezado;
+    }
+    
+    .menuSticky {
+        position: sticky;
+        top: 0%;
+        grid-area: menuSticky;
+         
+    }
+
+    .menuNav {
+        background-color: rgb(182, 147, 101);
+        grid-area: menuNav ;
+        
+                       
+    }
+    
+    .seccionUno {
+        grid-area: seccionUno;
+    }
+    
+    .seccionDos {
+        grid-area: seccionDos;
+    }
+    
+    .pieDePag {
+        grid-area: pieDePag;
+    }
+
+    
+    ul li span {
+        display: none;
+    }
+
+    .iconMenu {
+        
+        color: rgb(133, 79, 34);
+    
+    }
+
+       
+    .menuLista {
+        text-align: center;
+    }
+
+    .itemBoton {
+        text-decoration: none;
+        color: rgb(133, 79, 34);
+    }
+    
+    .iconMenu {
+        margin: 3px;
+    
+    }
+    
+    .tituloCentral {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1.5;
+        color: rgb(98, 85, 85);
+        
+    }
+    
+    
+    .subTituloCentral {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1em;
+        font-style: italic;   
+    }
+    
+    
+    
+    .contenedorImgCentral {
+        text-align: center;
+        margin-top: 40px;
+        
+        
+    }
+    
+    .imgCentro {
+        display: inline-block;
+        padding: 20px;
+        
+         
+    }
+    
+    .lanaUno , .lanaTres {
+        width: 400px;
+        border-radius: 30%;
+        border-style: dotted solid;
+        border-color: rgba(206, 123, 28, 0.911);
+        padding: 4px;
+    }
+    
+    .lanaDos {
+        width: 400px;
+        height: 268px;
+        border-radius: 30%;
+        border-style: dotted solid;
+        border-color: rgba(206, 123, 28, 0.911);
+        padding: 4px;
+    }
+    
+    
+    .oficioTitulo {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 80px;
+    }
+    
+    .videoTuto {
+        text-align: center;
+        margin-top: 30px;
+        border-radius: 15px;
+    
+    }
+    
+    .whatsappBotonContenedor {
+        display: inline-block;
+        position: fixed;
+        right: 4%;
+        bottom: 5%;
+        font-size: 2em;
+        
+    }
+    
+    .fa-whatsapp {
+        color: green;
+    }
+    
+    .contenedorBotonArriba {
+        text-align: center;
+        margin: 50px;
+        display: none;
+    }
+    
+    .arribaBoton {
+        display: none;
+        text-align: center;
+        font-size: 1.2em;
+        text-decoration: none;
+    }
+    
+    .derechosRes {
+        text-align: center;
+        margin-top: 20px;
+        font-size: .8em;
+    }
+    
+    .autorWeb {
+        text-align: center;
+        margin-top: 5px;
+        font-size: .7em;
+    }
+    
+    .navLinksPie {
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    .linksPie {
+        display: inline-block;
+        margin: 20px;
+        
+    }
+    
+    .linksPie a {
+        text-decoration: none;
+    }
+    
+    hr {
+        opacity: 40% ;
+    }
+
+}

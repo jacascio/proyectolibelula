@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/29d67c4692.js" crossorigin="anonymous"></script>  
+     
+    <title> Contacto </title>
+</head>
+<body>
+    <div class="gridContainer">
+
+    <div class="imgEncabezado"></div>
+    <header class="menuSticky"> 
+        <div>
+            <nav class="menuNav">
+                <ul class="menuLista"> 
+                    <li class="menuListaItem"><a class="itemBoton" href="../index.html"><i class="iconMenu fa-solid fa-house"></i><span> Inicio </span></a></li>
+                    <li class="menuListaItem"><a class="itemBoton" href="../pages/productos.html"><i class="iconMenu fa-solid fa-bag-shopping"></i><span>Productos</span></a></li>
+                    <li class="menuListaItem"><a class="itemBoton" href="../pages/sobrenosotros.html"><i class="iconMenu fa-solid fa-circle-info"></i><span>Sobre nosotros</span></a></li>
+                    <li class="menuListaItem"><a class="itemBoton" href="../pages/ubicacion.html"><i class="iconMenu fa-solid fa-location-dot"></i><span>Ubicacion</span></a></li>
+                    <li class="menuListaItem"><a class="itemBoton" href="../pages/contacto.html"><i class="iconMenu fa-solid fa-envelope"></i><span>Contacto</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <h1 class="tituloCentral"> Contactanos </h1>
+        
+        <form>
+            <fieldset>
+                <legend></legend>               
+                    <div>
+                        <label class="labelPosition" for="nombreApellido"> Nombre y apellido: </label>
+                        <input class="inputContact" type="text" name="nombreApellido" placeholder="Nombre y apellido">
+                    </div>
+                    <div>
+                        <label class="labelPosition" for="mail"> E-mail: </label>
+                        <input class="inputContact" type="email" name="mail" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="pais"> Selecciona tu pais: </label>
+                        <select name="pais">
+                            <option value="Argentina"> Argentina </option>
+                            <option value="Brasil"> Brasil </option>
+                            <option value="Chile"> Chile </option>
+                            <option value="Uruguay"> Uruguay </option>
+                            <option value="Paraguay"> Paraguay </option>   
+                        </select>    
+                    </div>
+                    <div class="textAreaContenedor">
+                        <label for="mensaje"></label>
+                        <textarea class="textArea" name="mensaje" placeholder="Mensaje"></textarea>
+                    </div>
+                    <div>
+                        <input class="sumbitContact" type="submit" value="Enviar">
+                    </div>
+            </fieldset>
+        </form>
+
+    
+    </main> 
+
+    <div class="whatsappBotonContenedor"> <!-- COLOCAR ICONO WSP -->
+        <a class="whatsappBoton" href="https://api.whatsapp.com/send?phone=11111111111"><i class="fa fa-whatsapp" aria-hidden="true"></a></i>
+    </div>
+        
+    <footer>
+        <hr>
+        <p class="derechosRes"> Todos los derechos reservados </p>
+        <p class="autorWeb"> Joel Cascio Web Design  </p>
+        <nav class="navLinksPie">
+            <ul> <!-- los botones seran iconos -->
+                <li class="linksPie"><a href="https://facebook.com" target="blank">Facebook</a></li>
+                <li class="linksPie"><a href="https://www.instagram.com/artesania.libelula/" target="blank" > Instagram </a></li>
+            </ul>
+        </nav>
+
+    </footer>
+    </div>
+</body>
+
+</html>    
