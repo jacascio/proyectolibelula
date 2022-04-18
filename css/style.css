@@ -301,12 +301,25 @@ select {
 }
 
 .productosTitulo {
-    background-color: rgba(193, 146, 105, 0.755);
     height: 90px;
     
     
 }
 
+.ajusteMedida {
+    display: flex; 
+    width: auto;  
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+
+.carroFotos {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+}
+   
 
 
 @media only screen and (max-width:1180px){
